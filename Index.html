@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+</style>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h2>My Site</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="Contact">Contact</a></li>
+            <li><a href="Services">Services</a></li>
+        </ul>
+        <div class="menu-button">⫴</div>
+    </div>
+    <div class="home">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">Sadiq</div>
+        <div class="box">Shah</div>
+    </div>
+</body>
+<script>
+    const menu_button = document.querySelector(".menu-button");
+    const nav_links = document.querySelector(".nav-links");
+    menu_button.addEventListener('click', ()=>{
+        nav_links.classList.toggle("active");
+    })
+</script>
+</html>
